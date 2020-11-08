@@ -1,5 +1,8 @@
 # IMDb Movie Dataset Visualization
 
+In this project, it is aimed to make web based visualization using imdb movie dataset.
+Django was used as backend development and Angular as frontend development.
+
 ## Backend
 
 ### Requirements
@@ -68,9 +71,8 @@ To run backend tests:
 $ python3 manage.py test
 ```
 
-Go **http://127.0.0.1:8000/** on your browser. (Add new data to db on **http://127.0.0.1:8000/admin/**)
+Go **http://127.0.0.1:8000/** on your browser.
 
-![Picture](/result.png)
 
 ## Frontend
 
