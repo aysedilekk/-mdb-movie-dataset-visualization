@@ -10,12 +10,6 @@ Django was used as backend development and Angular as frontend development.
 * Django
 * Postgres
 
-```sh
-$ ng --version
-```
-![Picture](/angular.png)
-
-
 ### Installation
 
 #### Postgres
@@ -85,6 +79,11 @@ Go **http://127.0.0.1:8000/** on your browser.
 * Angular CLI: v10.2.0
 * Node v12.8.1
 * npm v6.10.2
+
+```sh
+$ ng --version
+```
+![Picture](/angular.png)
 
 ### Installation
 
