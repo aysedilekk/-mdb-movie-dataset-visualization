@@ -10,6 +10,11 @@ Django was used as backend development and Angular as frontend development.
 * Django
 * Postgres
 
+```sh
+$ ng --version
+```
+![Picture](/angular.png)
+
 
 ### Installation
 
