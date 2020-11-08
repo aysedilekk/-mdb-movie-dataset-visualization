@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-light bg-light center">
+  <a class="navbar-brand font-weight-bold m-1" href="#">
+    <span class="logo">IMDb</span> Movie Dataset Visualization
+  </a>
+  <button class="btn btn-outline-dark my-2 my-sm-0" type="button" (click)="logout()">Logout</button>
+</nav>
+
+<div *ngIf="isDataAvailable" class="container my-5 pt-5">
+  <div class="chart-custom text-center mb-5">
+    <h3>Movie Count vs. Genre</h3>
+    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabel" chartType="bar" [options]="barChartOptions"
+      width="500" height="300"></canvas>
+  </div>
+
+  <div class="chart-custom text-center my-5 py-5">
+    <h3>Movie Count vs. Year</h3>
+    <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabel" chartType="line" [options]="lineChartOptions"
+      width="500" height="300"></canvas>
+  </div>
+
+  <div class="chart-custom text-center my-5 py-5">
+    <h3>Most Voted 50 Movies</h3>
+    <canvas baseChart [datasets]="barChartData2" [labels]="barChartLabel2" chartType="bar" [options]="barChartOptions2"
+      width="500" height="300"></canvas>
+  </div>
+
+  <div class="chart-custom text-center my-5 py-5">
+    <h3>Random 50 Movies vs. Reviews</h3>
+    <canvas baseChart [datasets]="lineChartData2" [labels]="lineChartLabel2" chartType="line" [options]="lineChartOptions2"
+      width="500" height="300"></canvas>
+  </div>
+</div>
