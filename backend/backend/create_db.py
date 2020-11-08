@@ -1,10 +1,12 @@
 import csv
 from .models import Movie
 
-""" Save dataset to the database using the Django’s ORM create method. """
-
 
 def create_db():
+
+    """
+    Save dataset to the database using the Django’s ORM create method.
+    """
     data = csv.DictReader(open("./IMDBmovies.csv"))
     for row in data:
         duration = 0 if row['duration'] == '' else int(row['duration'])

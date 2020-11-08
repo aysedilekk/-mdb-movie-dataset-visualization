@@ -86,7 +86,7 @@ def review_count_for_random_movies(request):
     return response.Response(review_count)
 
 
-# /movie ye login olmadan ulaşamamak için
+# Example for url protect (/movies)
 class MovieListAPIView(generics.ListAPIView):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
