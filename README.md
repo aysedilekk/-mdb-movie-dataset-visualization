@@ -58,8 +58,8 @@ $ sudo apt-get install python-pip python-dev libpq-dev postgresql postgresql-con
 To run backend:
 
 ```sh
-$ python3 manage.py makemigrations
-$ python3 manage.py makemigrate
+$ python3 manage.py makemigrations or python3 manage.py makemigrations backend
+$ python3 manage.py migrate
 $ python3 manage.py createsuperuser
 $ python3 manage.py runserver
 ```
